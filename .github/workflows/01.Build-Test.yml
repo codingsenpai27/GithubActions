@@ -4,9 +4,14 @@ jobs:
   Job-Message-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Clone Project
+        uses: actions/checkout@v3
+      - name: Install Python in Ubuntu
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
-      - run: ls
-      - run: date
+      - name: Execute some Linux Commands
+        run: |
+          ls
+          date
+          echo "V4"
