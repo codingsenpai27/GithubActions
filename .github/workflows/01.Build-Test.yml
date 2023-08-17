@@ -16,3 +16,4 @@ jobs:
           date
           echo "V4"
           echo "V5"
+          echo "V7"
